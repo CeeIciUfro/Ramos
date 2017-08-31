@@ -1,0 +1,54 @@
+burbuja matriz;
+for(int i = 0; i < n-1; i++) //el i y el j es para ir comparando un termino de otro
+            {
+                for(int j = i+1; j < n; j++)
+                {
+                    if (puntajes[j][1] > puntajes[i][1])
+                    {
+                        for(int r=0;r<2;r++){   // para mover las columnas creo, el 2 es la cantidad de columnas que hay
+                        double tmp = puntajes[i][r];
+                        puntajes[i][r] = puntajes[j][r];
+                        puntajes[j][r] = tmp;
+                        }
+                    }
+                }
+            }
+//ordena la matriz de abajo hacia arriba
+for(  i=0; i < n; i++){
+        for(  j=0;j< 4; j++){
+        for(int x=0; x < n; x++){
+        for(int y=0; y <4; y++){
+        if(arr[i][j] < arr[x][y]){
+        int t = arr[i][j];
+        arr[i][j] = arr[x][y];
+        arr[x][y] = t;
+}
+}
+}
+} }
+
+burbuja arreglo: 
+ int i, j, aux;
+         for(i=0;i<A.length-1;i++)
+              for(j=0;j<A.length-i-1;j++)
+                   if(A[j+1]<A[j]){
+                      aux=A[j+1];
+                      A[j+1]=A[j];
+                      A[j]=aux;
+                   } 
+
+intercalar:
+int arreglo3[] = new int[n+m];                                  		
+		for (i = 0; i < arreglo3.length; i++) {                         
+			if(i%2==0 & p<n){                                       
+			arreglo3[i] = arreglo1[p];                              
+			p++;
+			}else if (k<m){                                         
+				arreglo3[i] = arreglo2[k];
+				k++;
+			}else if (i%2!=0){
+				arreglo3[i] = arreglo1[p];
+                                p++;
+			}
+		}  
+                   }
